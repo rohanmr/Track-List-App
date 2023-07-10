@@ -1,5 +1,15 @@
 import React from "react";
 import { categories } from "../App";
+// import { z } from "zod";
+// import { useForm } from "react-hook-form";
+
+// const schema = z.object({
+//   description: z.string().min(3).max(50),
+//   amount: z.number().min(0.01).max(100_00),
+//   category: z.enum(categories),
+// });
+
+// type ExpenseFromData = z.infer<typeof schema>;
 
 const ExpenseForm = () => {
   return (
