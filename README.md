@@ -5,11 +5,11 @@ Download the code. Open in VS Code and Run by following the Commands.
 ## Steps:
  
 ```bash
-First Command
+First Command:
 
  npm install
 
-Second Command
+Second Command:
   
  npm run dev
 ``` 
