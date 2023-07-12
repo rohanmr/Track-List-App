@@ -4,12 +4,13 @@ Download the code. Open in VS Code and Run by following the Commands.
 
 ## Steps:
  
+```bash
  npm install
 
      or
  
  npm run dev
- 
+``` 
 
 
 
