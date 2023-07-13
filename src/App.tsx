@@ -20,6 +20,9 @@ function App() {
     : expenses;
   return (
     <div className="m-5">
+      <div>
+        <h2>Expense List </h2>
+      </div>
       <div className="mb-5">
         <ExpenseForm
           onSubmit={(expense) =>
