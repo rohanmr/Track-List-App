@@ -37,7 +37,7 @@ function App() {
     ? expenses.filter((e) => e.category === selectedCategory)
     : expenses;
   return (
-    <div>
+    <div className="m-5">
       <div className="mb-5">
         <ExpenseForm />
       </div>
