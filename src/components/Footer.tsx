@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="card text-center container">
-      <div className="card-header">Expense List</div>
+      <div className="card-header fw-bold fs-4">Expense List</div>
       <div className="card-body">
         <h5 className="card-title">Note Your Dayli Expenses</h5>
         <p className="card-text">
