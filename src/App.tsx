@@ -3,6 +3,7 @@ import ExpenseList from "./components/ExpenseList";
 import ExpenseFilter from "./components/ExpenseFilter";
 import ExpenseForm from "./components/ExpenseForm";
 import categories from "./categories";
+import Footer from "./components/Footer";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -19,27 +20,33 @@ function App() {
     ? expenses.filter((e) => e.category === selectedCategory)
     : expenses;
   return (
-    <div className=" container-sm">
-      <div className="mt-5 ">
-        <h2>Expense List </h2>
-      </div>
-      <div className="mb-5">
-        <ExpenseForm
-          onSubmit={(expense) =>
-            setExpenses([...expenses, { ...expense, id: expenses.length + 1 }])
-          }
+    <>
+      <div className=" container-sm">
+        <div className="mt-5 ">
+          <h2>Expense List </h2>
+        </div>
+        <div className="mb-5">
+          <ExpenseForm
+            onSubmit={(expense) =>
+              setExpenses([
+                ...expenses,
+                { ...expense, id: expenses.length + 1 },
+              ])
+            }
+          />
+        </div>
+        <div className="mb-3">
+          <ExpenseFilter
+            onSelectCategory={(category) => setSelectedCategory(category)}
+          />
+        </div>
+        <ExpenseList
+          expenses={visibleExpenses}
+          onDelete={(id) => setExpenses(expenses.filter((e) => e.id !== id))}
         />
       </div>
-      <div className="mb-3">
-        <ExpenseFilter
-          onSelectCategory={(category) => setSelectedCategory(category)}
-        />
-      </div>
-      <ExpenseList
-        expenses={visibleExpenses}
-        onDelete={(id) => setExpenses(expenses.filter((e) => e.id !== id))}
-      />
-    </div>
+      <Footer />
+    </>
   );
 }
 
