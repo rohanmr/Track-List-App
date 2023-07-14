@@ -14,6 +14,6 @@ Second Command:
  npm run dev
 ``` 
 
-
+## Info
 
 Simple React-Typescript project for tracking expenses.
