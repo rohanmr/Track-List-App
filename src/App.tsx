@@ -19,8 +19,8 @@ function App() {
     ? expenses.filter((e) => e.category === selectedCategory)
     : expenses;
   return (
-    <div className="m-5">
-      <div>
+    <div className=" container-sm">
+      <div className="mt-5 ">
         <h2>Expense List </h2>
       </div>
       <div className="mb-5">
