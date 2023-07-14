@@ -3,9 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="card text-center container">
-      <div className="card-header">Featured</div>
+      <div className="card-header">Expense List</div>
       <div className="card-body">
-        <h5 className="card-title">Special title treatment</h5>
+        <h5 className="card-title">Note Your Dayli Expenses</h5>
         <p className="card-text">
           With supporting text below as a natural lead-in to additional content.
         </p>
