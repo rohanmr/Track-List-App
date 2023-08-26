@@ -1,6 +1,10 @@
 # Track-List-App
 
-Download the code. Open in VS Code and Run by following the Commands.
+Download the code. 
+
+Open in VS Code.
+
+Run by following the Commands.
 
 ## Steps:
  
