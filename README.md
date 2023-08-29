@@ -1,6 +1,6 @@
 # Track-List-App
 
-Download the code. 
+Download the zip file of the code. 
 
 Open in VS Code.
 
